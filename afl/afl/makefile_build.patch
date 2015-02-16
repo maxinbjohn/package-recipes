@@ -1,0 +1,12 @@
+diff -Naur afl-1.46b_back/Makefile afl-1.46b/Makefile
+--- afl-1.46b_back/Makefile	2015-02-16 00:19:46.000000000 +0100
++++ afl-1.46b/Makefile	2015-02-16 11:27:59.048059181 +0100
+@@ -37,7 +37,7 @@
+ 
+ COMM_HDR    = alloc-inl.h config.h debug.h types.h
+ 
+-all: test_x86 $(PROGS) test_build all_done
++all: test_x86 $(PROGS)
+ 
+ test_x86:
+ 	@echo "[*] Checking for the ability to compile x86 code..."
